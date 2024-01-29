@@ -10,4 +10,6 @@ For cars that don't have working locks
 
 -Upload code
 
--Pull hip
+-Hide Arduino and power switch somewhere
+
+-Pull hip and enjoy
