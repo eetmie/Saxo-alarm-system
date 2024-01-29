@@ -157,20 +157,20 @@ void loop() {
         Led.on();
         beep(2,200);
         delay(500);
+        // let the user know if someone has opened the doors
         beep(timesAlarmTriggered,500);
       	ResetArmed = true;
+      
       	while (ResetArmed) {
-          
-          	//Serial.println("kohta huutaa");	
-        	//delay(waitBeforeAlarm*1000);
         	if (alarmTimer.isTimedOut()) {
+            //Serial.println("Alarm active!");	
         		alarm();
         	}
           	if (resetButtonPressed()) {
-              	//Serial.println("resetoitu");
+              	//Serial.println("Alarm reseted!");
               	beep(1,1000);
               	delay(5000);
-            	setup();
+              	setup();
             }
           delay(100);
         }
